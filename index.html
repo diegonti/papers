@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+</head>
+<body>
+    <header>
+        <h1>My Published Papers Collection</h1>
+    </header>
+    <div class="nav-links">
+        <!-- <a href="../" class="back-link">See All papers</a> -->
+         <br>
+        <a href="https://diegonti.github.io" class="main-page-link">Visit My Main Page</a>
+    </div>
+    
+    
+    <div class="controls">
+        <label for="sort">Sort by:</label>
+        <select id="sort" onchange="sortPapers()">
+            <option value="year">Year</option>
+            <option value="title">Title</option>
+            <option value="journal">Journal</option>
+        </select>
+        <label for="order">Order:</label>
+        <select id="order" onchange="sortPapers()">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select>
+        <label for="filter-journal">Filter by Journal:</label>
+        <select id="filter-journal" onchange="filterPapers()">
+            <option value="all">All</option>
+        </select>
+    </div>
+
+    <section class="papers-summary" id="papers-summary">
+
+        <div class="paper-item" data-year="2023" data-title="Bandgap engineering of MXene compounds for water splitting" data-journal="JMCA">
+            <img src="papers/paper1/paper1.jpg" alt="Paper 1" class="paper-thumbnail">
+            <h2>Bandgap Engineering of MXene Compounds for Water Splitting</h2>
+            <p><i>J. Mater. Chem. A</i>, 2023, <b>11</b>, 13754&ndash;13764.</p>
+            <div class="buttons">
+                <a href="papers/paper1/paper1.pdf" class="btn" download=""><i class="fa-solid fa-download btn-icon" title="Download"></i></a>
+                <a href="https://doi.org/10.1039/D3TA01933K" class="btn"><i class="fa-solid fa-link btn-icon" title="Paper Link"></i></a>
+            </div>
+        </div>
+
+        <div class="paper-item" data-year="2024" data-title="Tuning MXenes Towards Their Use in Photocatalytic Water Splitting" data-journal="EEM">
+            <img src="papers/paper2/paper2.jpg" alt="Paper 2" class="paper-thumbnail">
+            <h2>Tuning MXenes Towards Their Use in Photocatalytic Water Splitting</h2>
+            <p><i>Energy Environ. Mater.</i>, 2024, <b>7</b>, e12774.</p>
+            <div class="buttons">
+                <a href="papers/paper2/paper2.pdf" class="btn" download=""><i class="fa-solid fa-download btn-icon" title="Download"></i></a>
+                <a href="https://doi.org/10.1002/eem2.12774" class="btn"><i class="fa-solid fa-link btn-icon" title="Paper Link"></i></a>
+            </div>
+        </div>
+
+        <div class="paper-item" data-year="2025" data-title="Exploring the Photoactive Properties of Promising MXenes for Water Splitting" data-journal="JMCA">
+            <img src="papers/paper3/paper3.jpg" alt="Paper 3" class="paper-thumbnail">
+            <h2>Exploring the Photoactive Properties of Promising MXenes for Water Splitting</h2>
+            <p><i>J. Mater. Chem. A</i>, 2025, <b>Advance Article</b>.</p>
+            <div class="buttons">
+                <a href="papers/paper3/paper3.pdf" class="btn" download=""><i class="fa-solid fa-download btn-icon" title="Download"></i></a>
+                <a href="https://doi.org/10.1039/D4TA06852A" class="btn"><i class="fa-solid fa-link btn-icon" title="Paper Link"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

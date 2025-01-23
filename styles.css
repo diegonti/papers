@@ -1,0 +1,225 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 1.5em 0;
+    background-color: #333; /* Dark background to match your header's theme */
+    color: white;
+}
+
+/* Header's h1 styling */
+header h1 {
+    font-size: 2em;
+    margin: 0; /* No margin below to allow space for nav-links */
+    font-weight: bold;
+}
+
+/* Navigation links styling */
+.nav-links {
+    display: flex;
+    justify-content: space-between; /* Links on left and right */
+    align-items: center;
+    margin: 0 auto; /* Center the nav-links container */
+    padding: 0.5em 1em; /* Padding for better spacing */
+    background-color: #444; /* Slightly different background for contrast */
+    color: white; /* Ensure link color is white */
+}
+
+.nav-links a {
+    color: rgb(162, 162, 162); /* White links to match the header text */
+    font-size: 1em; /* Font size slightly smaller than h1 */
+    font-weight: normal;
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+.nav-links a:hover {
+    color: #ddd; /* Slightly lighter color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+        align-items: center;
+    }
+
+    .nav-links a {
+        margin: 0.5em 0; /* Vertical space between links */
+    }
+}
+
+
+
+/* Poster summary page */
+.papers-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+}
+
+.paper-item {
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s ease; /* Smooth transition on hover */
+}
+
+.paper-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.paper-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.paper-item h2 {
+    font-size: 1.2em;
+}
+
+.paper-item p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.paper-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+
+/* paper details page */
+.paper-details {
+    padding: 2em;
+    text-align: center;
+}
+
+.paper-full {
+    max-width: 60%;
+    border-radius: 8px;
+}
+
+.paper-details h2 {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.paper-details p {
+    font-size: 1em;
+    color: #333;
+}
+
+.paper-details a {
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+
+/* Acknowledgement logos */
+.acknowledgement-logos {
+    display: flex;
+    justify-content: center; /* Center logos horizontally */
+    align-items: center; /* Align logos vertically in the same row */
+    gap: 1em; /* Space between the logos */
+    flex-wrap: wrap; /* If screen is too narrow, logos will wrap to the next line */
+    margin-top: 1em;
+    padding: 1em 0;
+}
+
+.acknowledgement-logos img {
+    max-height: 50px;
+    transition: transform 0.3s ease; /* Optional: add a hover effect */
+}
+
+.acknowledgement-logos img:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+
+
+
+
+
+/* Controls for sorting and filtering */
+.controls {
+    text-align: center;
+    margin: 1em 0; /* Add some margin for spacing */
+}
+
+.controls label {
+    font-size: 1em;
+    margin-right: 0.5em;
+}
+
+.controls select {
+    padding: 0.5em;
+    font-size: 1em;
+    margin: 0 1em; /* Margin between selects */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff; /* Background color for the dropdown */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.controls select:focus {
+    border-color: #007bff; /* Border color on focus */
+}
+
+
+
+
+/* Button styles */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the icon horizontally */
+    background-color: #33333300;
+    color: #fff;
+    padding: 0.75em; /* Square buttons */
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    position: relative; /* Ensure proper positioning */
+}
+
+.btn:hover {
+    background-color: #767676;
+}
+
+/* Adjusting icon size and centering */
+.btn-icon {
+    font-size: 2em; /* Increase icon size */
+    line-height: 1; /* Ensure the icon is centered vertically */
+    transition: color 0.3s ease;
+}
+
+.btn:hover .btn-icon{
+    color: #ffffff;
+}
